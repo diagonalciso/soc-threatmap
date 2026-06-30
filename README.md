@@ -132,6 +132,21 @@ Edit the unit's `WorkingDirectory`/`ExecStart` to match where you put the app.
 
 ---
 
+## Testing
+
+```bash
+python -m pytest -q          # pytest.ini sets pythonpath=.
+```
+
+Offline suite (no network), runs in CI (`.github/workflows/ci.yml`, py3.12, push+PR):
+- `tests/test_geo.py` — routable guard, deterministic synthetic scatter, TEST-NET
+  toggle, country centroids, and a real MaxMind mmdb pointer-decode (uses
+  `GeoLite2-City.mmdb` if present, skips otherwise).
+- `tests/test_sources.py` — every feed fetcher driven with a sample blob, network
+  monkeypatched (parsers verified without hitting the internet).
+
+---
+
 ## Build your own packages
 
 Self-contained executables are produced with **PyInstaller** from `socmap.spec`:
