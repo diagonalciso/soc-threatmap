@@ -7,10 +7,10 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=user
-WorkingDirectory=/home/user/socmap
-EnvironmentFile=/home/user/socmap/.env
-ExecStart=/usr/bin/python3 /home/user/socmap/app.py
+User=socmap
+WorkingDirectory=/opt/socmap
+EnvironmentFile=/opt/socmap/.env
+ExecStart=/usr/bin/python3 /opt/socmap/app.py
 Restart=on-failure
 RestartSec=5
 
