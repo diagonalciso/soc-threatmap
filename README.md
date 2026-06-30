@@ -1,11 +1,11 @@
-# Attack Map — Android (standalone)
+# SOCmap — Android (standalone)
 
 A self-contained Norse-style live attack map for Android tablets/phones. Polls
 **free public threat feeds directly on the device**, geolocates each malicious IP,
 and animates the hits as glowing arcs on a canvas world map. No backend, no login,
 no API keys.
 
-Companion to the desktop `~/attackmap` server — same feeds, same look, but the
+Companion to the desktop `~/socmap` server — same feeds, same look, but the
 whole pipeline runs on-device.
 
 ## What it shows
@@ -43,7 +43,7 @@ dshield (SANS top attackers) · blocklist.de · CINS Army. Geolocation: **ipwho.
 ## Build
 
 ```bash
-cd ~/attackmap-android
+cd ~/socmap-android
 ANDROID_HOME=/home/user/android-sdk JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 \
   ./gradlew :app:assembleDebug
 # -> app/build/outputs/apk/debug/app-debug.apk   (~3.4 MB, universal)
@@ -53,7 +53,7 @@ ANDROID_HOME=/home/user/android-sdk JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 ```bash
 adb install -r app/build/outputs/apk/debug/app-debug.apk
-# or copy AttackMap-debug.apk to the tablet and tap it (allow unknown sources)
+# or copy SOCmap-debug.apk to the tablet and tap it (allow unknown sources)
 ```
 
 The debug APK is self-signed and installs directly — fine for personal use. For a

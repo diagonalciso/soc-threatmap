@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AttackMap"
+rootProject.name = "SOCmap"
 include(":app")

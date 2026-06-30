@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "eu.cisodiagonal.attackmap"
+    namespace = "eu.cisodiagonal.socmap"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "eu.cisodiagonal.attackmap"
+        applicationId = "eu.cisodiagonal.socmap"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

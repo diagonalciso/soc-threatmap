@@ -1,4 +1,4 @@
-package eu.cisodiagonal.attackmap
+package eu.cisodiagonal.socmap
 
 import android.annotation.SuppressLint
 import android.os.Bundle

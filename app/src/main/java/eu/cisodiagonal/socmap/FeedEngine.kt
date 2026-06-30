@@ -1,4 +1,4 @@
-package eu.cisodiagonal.attackmap
+package eu.cisodiagonal.socmap
 
 import org.json.JSONArray
 import org.json.JSONObject
@@ -27,7 +27,7 @@ class FeedEngine(
     private val onStatus: (String) -> Unit = {},
 ) {
     companion object {
-        private const val UA = "attackmap-android/1.0 (+cisodiagonal)"
+        private const val UA = "socmap-android/1.0 (+cisodiagonal)"
         private const val FIRST_BURST = 45
         private const val EMIT_PER_SEC = 6.0
         private const val REPLAY_PER_SEC = 1.6   // baseline trickle from pool so map never flatlines
