@@ -184,3 +184,8 @@ ANDROID_HOME=$HOME/android-sdk JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 \
 
 The release workflow also builds the debug APK and attaches `socmap-android.apk`
 to the same release as the desktop binaries. See [`android/README.md`](android/README.md).
+
+
+## Documentation
+
+See **[MANUAL.md](MANUAL.md)** for the full manual (overview, configuration, endpoints, integration, troubleshooting). In the running dashboard, click the **`?` Help button** in the top-right corner to open it at `/manual`.
