@@ -40,8 +40,8 @@ chmod +x socmap-linux-x64
 ### Option B — from source (Python 3.8+)
 
 ```bash
-git clone https://github.com/diagonalciso/socmap
-cd socmap
+git clone https://github.com/diagonalciso/soc-threatmap
+cd soc-threatmap
 cp .env.example .env          # optional — tweak home location, etc.
 ./run.sh                      # Windows: run.bat
 # -> http://localhost:8100
