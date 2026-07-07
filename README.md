@@ -125,8 +125,8 @@ A dead or rate-limited feed never takes the map down (every fetch is wrapped).
 ## Run as a service (Linux)
 
 ```bash
-sudo cp socmap.service /etc/systemd/system/
-sudo systemctl enable --now socmap
+sudo cp soc-threatmap.service /etc/systemd/system/
+sudo systemctl enable --now soc-threatmap
 ```
 Edit the unit's `WorkingDirectory`/`ExecStart` to match where you put the app.
 

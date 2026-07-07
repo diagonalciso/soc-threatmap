@@ -1,0 +1,18 @@
+# Install: sudo cp soc-threatmap.service /etc/systemd/system/ && \
+#          sudo systemctl daemon-reload && sudo systemctl enable --now soc-threatmap
+[Unit]
+Description=Standalone Norse-style attack map (live threat feeds)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=soc-threatmap
+WorkingDirectory=/opt/soc-threatmap
+EnvironmentFile=/opt/soc-threatmap/.env
+ExecStart=/usr/bin/python3 /opt/soc-threatmap/app.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
