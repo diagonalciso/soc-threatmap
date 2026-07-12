@@ -1,5 +1,7 @@
 # SOCmap — live threat-feed cyber attack map
 
+> Live global threat/attack map — animated arcs of geolocated events, offline GeoIP, dependency-free Python.
+
 A standalone, Norse-style real-time attack map. Polls **free public threat
 feeds**, geolocates every malicious IP, and animates the hits as glowing arcs
 flying into a sensor "home" on an HTML5 canvas world map — with a synthesized
