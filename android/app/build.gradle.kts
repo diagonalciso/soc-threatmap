@@ -1,11 +1,11 @@
 plugins {
+    // AGP 9+ built-in Kotlin support replaces the org.jetbrains.kotlin.android plugin.
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
 }
 
 android {
     namespace = "eu.cisodiagonal.socmap"
-    compileSdk = 35
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "eu.cisodiagonal.socmap"
